@@ -2,6 +2,7 @@
     <string name="title">What\'s my IQ?</string>
     <string name="app_name">What\'s my IQ?</string>
     <string name="question">In welcher Altersgruppe bist du?</string>
+    <string name="question2">Ein Ball + Trikot kosten 11CHF, das Trikot kostet 10CHF mehr. Wie viel kostet der Ball?</string>
     <string name="submit">Submit</string>
     <string name="selectionOne"><![CDATA[<18]]></string>
     <string name="selectionTwo">18–30</string>
