@@ -8,14 +8,13 @@
 
     <RelativeLayout
         android:id="@+id/activity_main"
-        android:layout_width="315dp"
-        android:layout_height="413dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="80dp"
-        android:layout_marginEnd="16dp"
+        android:layout_width="317dp"
+        android:layout_height="374dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="92dp"
         android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:context=".MainActivity"
@@ -65,7 +64,7 @@
         </RadioGroup>
 
         <Button
-            android:id="@+id/submit_button"
+            android:id="@+id/submitButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/radioGroup"
