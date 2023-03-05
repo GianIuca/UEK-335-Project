@@ -3,6 +3,7 @@
     <string name="app_name">What\'s my IQ?</string>
     <string name="question">In welcher Altersgruppe bist du?</string>
     <string name="question2">Ein Ball + Trikot kosten 11CHF, das Trikot kostet 10CHF mehr. Wie viel kostet der Ball?</string>
+    <string name="question3">In einem See gibt es Seerosen. Jeden Tag verdoppelt sich die Anzahl der Blätter. Wenn es 48 Tage dauert, damit die Seerosenblätter den gesamten See bedecken, wie lange dauert es, bis die Blätter die Hälfte des Sees bedecken?</string>
     <string name="submit">Submit</string>
     <string name="selectionOne"><![CDATA[<18]]></string>
     <string name="selectionTwo">18–30</string>

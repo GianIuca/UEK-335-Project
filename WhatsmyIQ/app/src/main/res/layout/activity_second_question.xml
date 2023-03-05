@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FirstQuestionActivity">
+    tools:context=".SecondQuestionActivity">
 
     <RelativeLayout
-        android:id="@+id/activity_first_question"
-        android:layout_width="317dp"
-        android:layout_height="374dp"
+        android:id="@+id/activity_second_question"
+        android:layout_width="322dp"
+        android:layout_height="465dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="92dp"
@@ -17,7 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:context=".FirstQuestionActivity"
+        tools:context=".SecondQuestionActivity"
         tools:ignore="MissingConstraints">
 
         <TextView
@@ -29,32 +29,31 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/question2"
+            android:id="@+id/question3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/title"
             android:layout_marginTop="32dp"
-            android:text="@string/question2"
+            android:text="@string/question3"
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/input1"
+            android:id="@+id/input2"
             android:layout_width="286dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/question2"
+            android:layout_below="@id/question3"
             android:layout_marginTop="16dp"
             android:minHeight="48dp"
             tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
-            android:id="@+id/submitButton2"
+            android:id="@+id/submitButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/input1"
+            android:layout_below="@id/input2"
             android:layout_marginTop="33dp"
             android:text="@string/submit" />
 
     </RelativeLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
