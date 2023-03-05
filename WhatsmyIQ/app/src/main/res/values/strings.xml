@@ -1,5 +1,6 @@
 <resources>
     <string name="title">What\'s my IQ?</string>
+    <string name="app_name">What\'s my IQ?</string>
     <string name="question">In welcher Altersgruppe bist du?</string>
     <string name="submit">Submit</string>
     <string name="selectionOne"><![CDATA[<18]]></string>
