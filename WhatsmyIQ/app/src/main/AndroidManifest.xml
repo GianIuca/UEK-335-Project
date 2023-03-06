@@ -12,6 +12,18 @@
         android:theme="@style/Theme.WhatsMyIQ"
         tools:targetApi="31">
         <activity
+            android:name=".FourthQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThirdQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecondQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstQuestionActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
