@@ -1,9 +1,12 @@
 package ch.zli.whatsmyiq;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import ch.zli.whatsmyiq.service.NotificationService;
 
 public class EmptyActivity extends AppCompatActivity {
 
@@ -31,6 +34,10 @@ public class EmptyActivity extends AppCompatActivity {
         System.out.println(question4 + " 4");
         System.out.println(age + " age");
 
+        Intent intent = new Intent(this, NotificationService.class);
+        startService(intent);
 
     }
+
+
 }

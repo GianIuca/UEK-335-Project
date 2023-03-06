@@ -1,7 +1,11 @@
 package ch.zli.whatsmyiq;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
 public class FourthQuestionActivity extends AppCompatActivity {
     private TextView title;
@@ -17,6 +22,8 @@ public class FourthQuestionActivity extends AppCompatActivity {
     private EditText input;
     private Button submitButton;
     private boolean solvedFourth = false;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +74,13 @@ public class FourthQuestionActivity extends AppCompatActivity {
                 }
                 Intent intent = new Intent(FourthQuestionActivity.this, EmptyActivity.class);
                 startActivity(intent);
+
+
             }
         });
+
+
     }
+
+
 }
