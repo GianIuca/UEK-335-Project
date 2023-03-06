@@ -6,19 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <RelativeLayout
         android:id="@+id/activity_main"
-        android:layout_width="317dp"
-        android:layout_height="374dp"
-        android:layout_marginStart="60dp"
+        android:layout_width="357dp"
+        android:layout_height="606dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="92dp"
         android:padding="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:context=".MainActivity"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp">
 
         <TextView
             android:id="@+id/title"
@@ -70,6 +68,16 @@
             android:layout_below="@id/radioGroup"
             android:layout_marginTop="33dp"
             android:text="@string/submit" />
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:icon="@mipmap/ic_app_icon_round" />
 
     </RelativeLayout>
 
