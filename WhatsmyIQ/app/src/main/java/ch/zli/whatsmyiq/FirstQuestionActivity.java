@@ -28,12 +28,7 @@ public class FirstQuestionActivity extends AppCompatActivity {
         input = findViewById(R.id.input1);
         submitButton = findViewById(R.id.submitButton2);
 
-        Intent intent = getIntent();
-        String age = intent.getStringExtra("age");
-
-        // Storing data into SharedPreferences
         SharedPreferences sharedPreferences = getSharedPreferences("database", MODE_PRIVATE);
-        sharedPreferences.edit().putString("age", age);
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
