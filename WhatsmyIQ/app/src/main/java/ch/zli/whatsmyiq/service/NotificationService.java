@@ -10,6 +10,8 @@ import android.os.IBinder;
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 
+import ch.zli.whatsmyiq.Modal.Vibrator;
+
 public class NotificationService extends Service {
 
     private static final String CHANNEL_ID = "defaultChannel";
@@ -36,16 +38,23 @@ public class NotificationService extends Service {
     public void onCreate() {
         super.onCreate();
         this.notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        NotificationChannel channel = new NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_DEFAULT);
+        NotificationChannel channel = new NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_HIGH);
         notificationManager.createNotificationChannel(channel);
     }
 
     private void sendNotification() {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setSmallIcon(android.R.drawable.ic_media_play)
-                .setContentTitle("Dein IQ isr: ")
+                .setContentTitle("Dein IQ ist: ")
                 .setContentText("Das hast du gut gemacht ")
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT);
+
+        // Vibrate phone
+        Vibrator vibrator = new Vibrator(this);
+        long[] pattern = {0, 187, 690, 420};
+        vibrator.vibrate(pattern, -1);
+
+
         notificationManager.notify(0, builder.build());
     }
 }
