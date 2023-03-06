@@ -15,6 +15,7 @@ public class EmptyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_empty);
 
+        // for test reasons
         boolean question1 = false;
         boolean question2 = false;
         boolean question3 = false;
@@ -26,13 +27,11 @@ public class EmptyActivity extends AppCompatActivity {
         question3 = sharedPreferences.getBoolean("question3", false);
         question4 = sharedPreferences.getBoolean("question4", false);
 
-        String age = sharedPreferences.getString("age", "<18");
 
         System.out.println(question1 + " 1");
         System.out.println(question2 + " 2");
         System.out.println(question3 + " 3");
         System.out.println(question4 + " 4");
-        System.out.println(age + " age");
 
         Intent intent = new Intent(this, NotificationService.class);
         startService(intent);

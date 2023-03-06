@@ -46,8 +46,6 @@ public class SecondQuestionActivity extends AppCompatActivity {
                     sharedPreferences.edit().putBoolean("question2", false).apply();
                 }
                 Intent intent = new Intent(SecondQuestionActivity.this, ThirdQuestionActivity.class);
-                String age = intent.getStringExtra("age");
-                sharedPreferences.edit().putString("age", age).apply();
                 startActivity(intent);
             }
         });

@@ -1,7 +1,6 @@
 package ch.zli.whatsmyiq;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -31,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setDefault();
 
         Button button = findViewById(R.id.submitButton);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,9 +38,6 @@ public class MainActivity extends AppCompatActivity {
 
                 RadioButton radioButton = findViewById(radioID);
                 String option = radioButton.getText().toString();
-
-                SharedPreferences sharedPreferences = getSharedPreferences("database", MODE_PRIVATE);
-                sharedPreferences.edit().putString("age", option).apply();
 
                 Intent intent = new Intent(MainActivity.this, FirstQuestionActivity.class);
                 startActivity(intent);
