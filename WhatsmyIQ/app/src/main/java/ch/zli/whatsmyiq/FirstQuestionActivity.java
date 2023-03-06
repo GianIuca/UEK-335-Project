@@ -34,7 +34,7 @@ public class FirstQuestionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String userInput = input.getText().toString().trim();
-                String solution = "1";
+                String solution = "0.5";
 
                 if (userInput.equals(solution)) {
                     Toast.makeText(FirstQuestionActivity.this, "Input: " + userInput + ", is true", Toast.LENGTH_SHORT).show();
