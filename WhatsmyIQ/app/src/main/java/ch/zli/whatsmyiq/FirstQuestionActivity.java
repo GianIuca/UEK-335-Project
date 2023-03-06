@@ -1,6 +1,7 @@
 package ch.zli.whatsmyiq;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,6 +28,13 @@ public class FirstQuestionActivity extends AppCompatActivity {
         input = findViewById(R.id.input1);
         submitButton = findViewById(R.id.submitButton2);
 
+        Intent intent = getIntent();
+        String age = intent.getStringExtra("age");
+
+        // Storing data into SharedPreferences
+        SharedPreferences sharedPreferences = getSharedPreferences("database", MODE_PRIVATE);
+        sharedPreferences.edit().putString("age", age);
+
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,10 +44,14 @@ public class FirstQuestionActivity extends AppCompatActivity {
                 if (userInput.equals(solution)) {
                     Toast.makeText(FirstQuestionActivity.this, "Input: " + userInput + ", is true", Toast.LENGTH_SHORT).show();
                     solvedFirst = true;
+                    // only store it when it's true
+                    sharedPreferences.edit().putBoolean("question1", true).apply();
                 } else {
                     Toast.makeText(FirstQuestionActivity.this, "Wrong, the solution is: :" + solution, Toast.LENGTH_SHORT).show();
                     solvedFirst = false;
+                    sharedPreferences.edit().putBoolean("question1", false).apply();
                 }
+
                 Intent intent = new Intent(FirstQuestionActivity.this, SecondQuestionActivity.class);
                 intent.putExtra("solvedFirst", solvedFirst);
                 startActivity(intent);

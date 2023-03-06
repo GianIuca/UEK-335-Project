@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 String option = radioButton.getText().toString();
 
                 Intent intent = new Intent(MainActivity.this, FirstQuestionActivity.class);
+                intent.putExtra("age", radioButton.getText().toString());
                 startActivity(intent);
             }
         });

@@ -1,6 +1,7 @@
 package ch.zli.whatsmyiq;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,12 +34,17 @@ public class ThirdQuestionActivity extends AppCompatActivity {
                 String userInput = input.getText().toString().trim();
                 String solution = "Sonntag";
 
+                SharedPreferences sharedPreferences = getSharedPreferences("database", MODE_PRIVATE);
+
+
                 if (userInput.equals(solution)) {
                     Toast.makeText(ThirdQuestionActivity.this, "Input: " + userInput + ", is true", Toast.LENGTH_SHORT).show();
                     solvedThird = true;
+                    sharedPreferences.edit().putBoolean("question3", true).apply();
                 } else {
                     Toast.makeText(ThirdQuestionActivity.this, "Wrong, the solution is: :" + solution, Toast.LENGTH_SHORT).show();
                     solvedThird = false;
+                    sharedPreferences.edit().putBoolean("question3", false).apply();
                 }
                 Intent intent = new Intent(ThirdQuestionActivity.this, FourthQuestionActivity.class);
                 startActivity(intent);
