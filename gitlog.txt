@@ -1,0 +1,152 @@
+commit 887b3488f124ddb107cdfb3afbb39e1eaf70ae45
+Merge: 4ff4737 856f36c
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Mar 7 12:47:29 2023 +0100
+
+    Merge branch 'main' of https://github.com/GianIuca/UEK-335-Project
+
+commit 4ff473740570dfafa1e4bd9a024eb097edb372f5
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Tue Mar 7 12:47:28 2023 +0100
+
+    Formatting code
+
+commit 856f36c9359c67364d1fd1265afeff30d9c8743a
+Author: GianIuca <81155368+GianIuca@users.noreply.github.com>
+Date:   Tue Mar 7 11:38:44 2023 +0100
+
+    Delete WhatsmyIQ/.idea directory
+
+commit 5b60da03e176c2a6672e9e926705439f83a8d0af
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Mon Mar 6 23:24:06 2023 +0100
+
+    Updated wrong solution
+
+commit e09fb875d23cf266e88a3098d17bdd6244b3602e
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Mon Mar 6 23:04:35 2023 +0100
+
+    Removed age from shared preferences
+
+commit eaed5d016b0633a84eb617c001b5148394c01310
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Mon Mar 6 23:04:14 2023 +0100
+
+    Removed age from shared preferences
+
+commit 64d374418410e794c2c048402226728b2052b510
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Mon Mar 6 22:57:50 2023 +0100
+
+    Merged Calculation service into Notification service
+
+commit cd6a6ecb30ffad9eb984029af3e63556e172d853
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Mon Mar 6 22:01:48 2023 +0100
+
+    Added calculation service
+
+commit e67a14f6f5e44c777c766d9db8ed8b3d9b704abe
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Mon Mar 6 21:15:52 2023 +0100
+
+    Added self-made icon to the main activity
+
+commit 93733b2bbdd655dd5563180839e2fc494201ea3f
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Mon Mar 6 15:26:24 2023 +0100
+
+    Added vibration with hard-coded log output
+    
+    I did hard-code the log output because I didn't see the log from the vibration.
+
+commit 44bcdb6b741ba26248f85bbc7eacc76c9ca3fab9
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Mon Mar 6 14:14:57 2023 +0100
+
+    Added Notification as a Service
+
+commit 5b2c8dfe149bd3d866a1eb15e0a19ea21bd80b9d
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Mon Mar 6 13:16:46 2023 +0100
+
+    Implemented sharedPreferences for communication between activities
+
+commit edccbaa892c22c20f69d836d4554754d8476aaa3
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Mon Mar 6 09:37:55 2023 +0100
+
+    Implemented fourth activity
+
+commit 865efb03b70674ef54d86b1380cb48961ede5c31
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Mon Mar 6 08:59:20 2023 +0100
+
+    Implemented third activity
+
+commit 12bbc94846431d7177959bd7bf0aa8ccf7778aa3
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Mon Mar 6 08:55:14 2023 +0100
+
+    Implemented second activity
+
+commit 168aafbad6acd9691a279c1768a9591c1236d281
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Mon Mar 6 08:43:04 2023 +0100
+
+    Added question activities
+
+commit ef53e044b4917df13768445f0ec8a6c755c0723b
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Sun Mar 5 18:18:18 2023 +0100
+
+    Created layout for the fourth question
+
+commit 5fe5c48b124086766fbea6ca2b7e493f20ea88b9
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Sun Mar 5 18:06:58 2023 +0100
+
+    Created layout for the third question
+
+commit aa4e981181da38cf0401dff1ade780680b78ebf4
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Sun Mar 5 17:57:45 2023 +0100
+
+    Created layout for the second question
+
+commit 162570bc0b0f8437a9a40129f8affae677dca3be
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Sun Mar 5 17:46:56 2023 +0100
+
+    Created layout for the first question
+
+commit 28c498cdfbcc20dfa55a86229e3c24ba1e66dd98
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Sun Mar 5 16:39:14 2023 +0100
+
+    Updated layout
+
+commit 2b6e1d95b830d1e121f04e2072a913a54853c39a
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Sun Mar 5 16:17:56 2023 +0100
+
+    Initialized buttons and set Default value to Radio button in MainActivity
+
+commit e2688eefa8b732c92e70fb93e6de03a9f933834c
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Sun Mar 5 15:05:44 2023 +0100
+
+    Created first view and did some styling
+
+commit cfe39390d241b02fe80e298533356ecfa7e827dc
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Sat Mar 4 22:25:38 2023 +0100
+
+    Created Project
+
+commit 59432ad62595342bf58809e44746859eaee3914a
+Author: GianIuca <gianluca.ferrara@ti8m.ch>
+Date:   Sat Mar 4 21:49:51 2023 +0100
+
+    Initial commit
